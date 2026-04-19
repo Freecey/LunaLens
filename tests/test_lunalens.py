@@ -174,11 +174,11 @@ class TestAsciiGenerator:
     
     def test_get_ascii_stats(self):
         """Test ASCII stats calculation."""
-        ascii_art = "abc\ndefgh\nijk"
+        ascii_art = "abc\ndefgh\nijklm"
         stats = get_ascii_stats(ascii_art)
         assert stats['width'] == 5
         assert stats['height'] == 3
-        assert stats['total_chars'] == 12
+        assert stats['total_chars'] == 13
     
     def test_create_ascii_banner(self):
         """Test ASCII banner creation."""

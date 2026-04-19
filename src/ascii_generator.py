@@ -13,7 +13,7 @@ from PIL import Image, ImageOps
 # Default character set from light to dark
 DEFAULT_CHARSET = ' .:-=+*#%@'
 COMPACT_CHARSET = ' .:#@'
-DETAILED_CHARSET = ' .`,-':;=+*#%@'
+DETAILED_CHARSET = " .',-':;=+*#%@"
 
 
 def load_and_preprocess(image_path: str, target_width: int) -> Image.Image:

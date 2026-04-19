@@ -9,14 +9,15 @@ __version__ = "1.0.0"
 __author__ = "Luna"
 __description__ = "AI-powered image analysis and creative visual exploration"
 
-from src.vision import analyze_image, extract_features, get_image_stats
+from src.vision import get_image_stats, extract_visual_features, validate_image, describe_image_locally
 from src.ascii_generator import generate_ascii, save_ascii
 from src.visual_insights import generate_insight, generate_mood, generate_story
 
 __all__ = [
-    "analyze_image",
-    "extract_features", 
     "get_image_stats",
+    "extract_visual_features",
+    "validate_image",
+    "describe_image_locally",
     "generate_ascii",
     "save_ascii",
     "generate_insight",
